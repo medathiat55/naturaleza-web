@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de fotografía de naturaleza - Capturando la belleza del mundo natural">
+    <title>Naturaleza en Foco - Fotografía de Naturaleza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌿 Naturaleza en Foco</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Capturando la Belleza de la Naturaleza</h2>
+            <p class="hero-subtitle">Cada momento es único, cada fotografía cuenta una historia</p>
+            <a href="#galeria" class="btn-primary">Explorar Galería</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy un apasionado fotógrafo de naturaleza dedicado a capturar los momentos más 
+                        hermosos y efímeros del mundo natural. Desde majestuosos paisajes montañosos 
+                        hasta los detalles más pequeños de la flora y fauna, cada imagen busca transmitir 
+                        la serenidad y el asombro que la naturaleza nos ofrece.
+                    </p>
+                    <p>
+                        Mi objetivo es compartir estas experiencias visuales y crear conciencia sobre 
+                        la importancia de preservar nuestro entorno natural para las futuras generaciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotos -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="paisajes">Paisajes</button>
+                <button class="filter-btn" data-filter="fauna">Fauna</button>
+                <button class="filter-btn" data-filter="flora">Flora</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Las imágenes se cargarán dinámicamente desde JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para vista ampliada -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagen ampliada">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <p>¿Te gustaría colaborar o tienes alguna pregunta?</p>
+                <div class="contact-info">
+                    <a href="mailto:contacto@naturalezaenfoco.com" class="contact-link">📧 contacto@naturalezaenfoco.com</a>
+                    <a href="https://instagram.com" target="_blank" class="contact-link">📷 @naturalezaenfoco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Naturaleza en Foco. Todos los derechos reservados.</p>
+            <p class="footer-subtitle">Hecho con ❤️ para preservar la belleza natural</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
